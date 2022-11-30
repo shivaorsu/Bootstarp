@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import { Button,Card } from 'react-bootstrap';
 
-function App() {
+
+function BrandExample() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar bg="dark" expand='sm' variant='dark'>
+        <Container>
+          <Navbar.Brand >Home</Navbar.Brand>
+          <Navbar.Brand >Store</Navbar.Brand>
+          <Navbar.Brand >About</Navbar.Brand>
+          <Button bg='light' variant="outline-info">
+              Cart 
+            </Button>
+       </Container>
+       </Navbar>
+       <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src='https://prasadyash2411.github.io/ecom-website/img/Album%201.png' />
+      <Card.Body>
+        <Card.Title>$12.99</Card.Title>
+        <Button variant="primary">Add Cart</Button>
+      </Card.Body>
+    </Card>
+    </>
   );
 }
 
-export default App;
+export default BrandExample;
