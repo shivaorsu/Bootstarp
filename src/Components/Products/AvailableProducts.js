@@ -1,57 +1,49 @@
 import React from "react";
 import Product from "./Product";
 
+const PRODUCTS_ARR = [
+  {
+    title: "Colors",
 
+    price: 100,
 
-const AvailableProducts = () => {
-  const productsArr = [
-    {
-      title: "Colors",
+    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
+  },
 
-      price: 100,
+  {
+    title: "Black and white Colors",
 
-      imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
-    },
+    price: 50,
 
-    {
-      title: "Black and white Colors",
+    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
+  },
 
-      price: 50,
+  {
+    title: "Yellow and Black Colors",
 
-      imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
-    },
+    price: 70,
 
-    {
-      title: "Yellow and Black Colors",
+    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
+  },
 
-      price: 70,
+  {
+    title: "Blue Color",
 
-      imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
-    },
+    price: 100,
 
-    {
-      title: "Blue Color",
+    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
+  },
+];
 
-      price: 100,
-
-      imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
-    },
-  ];
-  console.log(productsArr);
-
-
-  console.log(productList);
-
-  return (
-    <section>
-      <ul>{productsArr.map((prod) => {
-    console.log(prod);
-    return (
-      <Product title={prod.title} price={prod.price} image={prod.imageUrl} />
-    );
-  })}</ul>
-    </section>
-  );
+const AvailableProducts = (props) => {
+  const Products = PRODUCTS_ARR.map((products) => (
+    <Product
+      title={products.title}
+      price={products.price}
+      image={products.imageUrl}
+    />
+  ));
+  return 
 };
 
 export default AvailableProducts;

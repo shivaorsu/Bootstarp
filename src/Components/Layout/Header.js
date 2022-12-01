@@ -10,7 +10,8 @@ const Header = (props) => {
         <span>ABOUT</span>
 
         <button className={classes.button}> Cart </button>
-        <span> 0 </span>
+        <span></span>
+    
       </header>
       <h1 className={classes.h1}> The Generics </h1>
 
