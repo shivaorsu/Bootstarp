@@ -15,7 +15,7 @@
   }
 
   .music{
-    font-family: "Mental Mania";
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     padding: 20px;
   }
@@ -23,7 +23,7 @@
   .h1 {
     padding: 2%;
     width: 100%;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     color: beige;
     text-shadow: #080808;
